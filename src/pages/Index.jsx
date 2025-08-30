@@ -9,7 +9,11 @@ const Index = () => {
       {/* Header */}
       <header className="bg-gray-900 py-4">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold text-green-400">ESG AI 도구 테스터</div>
+          <div className="text-2xl font-bold text-green-400 flex items-center">
+            <span>ESG</span>
+            <img src="/logo.png" alt="ESG 로고" className="h-6 w-auto mx-2 inline-block align-middle" />
+            <span>Toolbox</span>
+          </div>
           <nav>
             <ul className="flex space-x-4">
               {['홈', '소개', '도구', '리뷰', '트렌드', '블로그', '연락처'].map((item) => (
@@ -29,8 +33,13 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 via-green-900 to-blue-900">
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-4">궁극의 AI 도구 리소스</h1>
-          <p className="text-xl mb-8">AI 혁신의 테스트, 리뷰, 그리고 트렌드</p>
+          <h1 className="text-5xl font-bold mb-4 flex items-center justify-center">
+            <span>ESG</span>
+            <img src="/logo.png" alt="ESG 로고" className="h-10 w-auto mx-3 inline-block align-middle" />
+            <span>Toolbox</span>
+          </h1>
+          <p className="text-xl mb-8">ESG 분야 AI 혁신 도구, 리뷰, 그리고 트렌드</p>
+          <p className="text-xl mb-8">proudly created by 한국ESG데이터(주)</p>
           <Button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
             도구 탐색하기
           </Button>
@@ -46,12 +55,20 @@ const Index = () => {
               <div key={item} className="bg-gray-800 rounded-lg p-6">
                 <Wrench className="text-green-400 mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-2">
-                  {item === 1 ? "GRI Index 생성기" : `AI 도구 ${item}`}
+                  {item === 1 
+                    ? "GRI Index 생성기" 
+                    : item === 2 
+                      ? "ESRS Index 생성기" 
+                      : item === 3 
+                        ? "CDP 대응 입력 내용 초안 생성기" 
+                        : `AI 도구 ${item}`}
                 </h3>
                 <p className="text-gray-400 mb-4">
                   {item === 1 
                     ? "지속가능경영보고서 초안을 업로드하면 GRI Index 를 생성하는 AI 도구입니다." 
-                    : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."
+                    : item === 2 
+                      ? "지속가능경영보고서 초안을 업로드하면 ESRS Index 를 생성하는 AI 도구입니다."
+                      : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."
                   }
                 </p>
                 <Button variant="outline" className="text-green-400 border-green-400 hover:bg-green-400 hover:text-white">
@@ -108,7 +125,7 @@ const Index = () => {
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <h3 className="text-xl font-bold mb-4">빠른 링크</h3>
             <ul className="space-y-2">
-              {['개인정보처리방침', '서비스 약관', '지원'].map((item) => (
+              {['툴 아이디어 제안하기', '개인정보처리방침', '서비스 약관', '지원'].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-gray-400 hover:text-green-400">{item}</a>
                 </li>
@@ -118,7 +135,7 @@ const Index = () => {
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <h3 className="text-xl font-bold mb-4">팔로우하기</h3>
             <div className="flex space-x-4">
-              {['LinkedIn', 'Twitter', 'Facebook', 'Instagram'].map((item) => (
+              {['LinkedIn', 'Facebook'].map((item) => (
                 <a key={item} href="#" className="text-gray-400 hover:text-green-400">
                   {item}
                 </a>
