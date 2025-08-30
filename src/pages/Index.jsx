@@ -45,8 +45,15 @@ const Index = () => {
             {[1, 2, 3].map((item) => (
               <div key={item} className="bg-gray-800 rounded-lg p-6">
                 <Wrench className="text-green-400 mb-4" size={48} />
-                <h3 className="text-xl font-bold mb-2">AI 도구 {item}</h3>
-                <p className="text-gray-400 mb-4">AI 도구의 기능과 역량에 대한 간략한 설명입니다.</p>
+                <h3 className="text-xl font-bold mb-2">
+                  {item === 1 ? "지속가능경영보고서 인덱스 생성기 1" : `AI 도구 ${item}`}
+                </h3>
+                <p className="text-gray-400 mb-4">
+                  {item === 1 
+                    ? "지속가능경영보고서 초안을 업로드하면 GRI Index 를 생성하는 AI 도구입니다." 
+                    : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."
+                  }
+                </p>
                 <Button variant="outline" className="text-green-400 border-green-400 hover:bg-green-400 hover:text-white">
                   도구함에 추가
                 </Button>
