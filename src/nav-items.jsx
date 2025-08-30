@@ -6,45 +6,45 @@ import Index from "./pages/Index.jsx";
  */
 export const navItems = [
   {
-    title: "Home",
+    title: "홈",
     to: "/",
     icon: <Home className="h-4 w-4" />,
     page: <Index />,
   },
   {
-    title: "About",
+    title: "소개",
     to: "/about",
     icon: <Info className="h-4 w-4" />,
-    page: <div>About Page</div>,
+    page: <div>소개 페이지</div>,
   },
   {
-    title: "Tools",
+    title: "도구",
     to: "/tools",
     icon: <Wrench className="h-4 w-4" />,
-    page: <div>Tools Page</div>,
+    page: <div>도구 페이지</div>,
   },
   {
-    title: "Reviews",
+    title: "리뷰",
     to: "/reviews",
     icon: <Star className="h-4 w-4" />,
-    page: <div>Reviews Page</div>,
+    page: <div>리뷰 페이지</div>,
   },
   {
-    title: "Trends",
+    title: "트렌드",
     to: "/trends",
     icon: <TrendingUp className="h-4 w-4" />,
-    page: <div>Trends Page</div>,
+    page: <div>트렌드 페이지</div>,
   },
   {
-    title: "Blog",
+    title: "블로그",
     to: "/blog",
     icon: <BookOpen className="h-4 w-4" />,
-    page: <div>Blog Page</div>,
+    page: <div>블로그 페이지</div>,
   },
   {
-    title: "Contact",
+    title: "연락처",
     to: "/contact",
     icon: <Mail className="h-4 w-4" />,
-    page: <div>Contact Page</div>,
+    page: <div>연락처 페이지</div>,
   },
 ];
