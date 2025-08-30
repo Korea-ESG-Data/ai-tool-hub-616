@@ -46,7 +46,7 @@ const Index = () => {
               <div key={item} className="bg-gray-800 rounded-lg p-6">
                 <Wrench className="text-green-400 mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-2">
-                  {item === 1 ? "지속가능경영보고서 인덱스 생성기 1" : `AI 도구 ${item}`}
+                  {item === 1 ? "지속가능경영보고서 인덱스 생성기 (GRI)" : `AI 도구 ${item}`}
                 </h3>
                 <p className="text-gray-400 mb-4">
                   {item === 1 
