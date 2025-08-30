@@ -9,7 +9,7 @@ const Index = () => {
       {/* Header */}
       <header className="bg-gray-900 py-4">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold text-green-400">AI 도구 테스터</div>
+          <div className="text-2xl font-bold text-green-400">ESG AI 도구 테스터</div>
           <nav>
             <ul className="flex space-x-4">
               {['홈', '소개', '도구', '리뷰', '트렌드', '블로그', '연락처'].map((item) => (
