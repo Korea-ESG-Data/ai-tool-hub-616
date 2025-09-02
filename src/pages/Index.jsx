@@ -104,16 +104,9 @@ const Index = () => {
             />
             <span>Toolbox</span>
           </h1>
-<<<<<<< HEAD
           <p className="text-xl mb-8">ESG 분야 AI 혁신 도구, 리뷰, 그리고 트렌드</p>
           <p className="text-xl mb-1">100% compatible with ESG데이터플랫폼 & BHR Solution</p>
           <p className="text-xl mb-8"> built by 한국ESG데이터(주)</p>
-=======
-          <p className="text-xl mb-8">
-            ESG 분야 AI 혁신 도구, 리뷰, 그리고 트렌드
-          </p>
-          <p className="text-xl mb-8">proudly created by 한국ESG데이터(주)</p>
->>>>>>> d36856b75c5408ca0fa3995820e2cbe1e5851988
           <Button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
             도구 탐색하기
           </Button>
@@ -129,7 +122,6 @@ const Index = () => {
               <div key={item} className="bg-gray-800 rounded-lg p-6">
                 <Wrench className="text-green-400 mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-2">
-<<<<<<< HEAD
                   {item === 1 
                     ? "GRI content index 생성기" 
                     : item === 2 
@@ -149,22 +141,6 @@ const Index = () => {
                         ? "지속가능경영보고서에 공시된 각 기관/기업의 ESG 데이터를 지표별로 비교·검색하는 AI 도구입니다."
                         : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."
                   }
-=======
-                  {item === 1
-                    ? "GRI Index 생성기"
-                    : item === 2
-                    ? "ESRS Index 생성기"
-                    : item === 3
-                    ? "CDP 대응 입력 내용 초안 생성기"
-                    : `AI 도구 ${item}`}
-                </h3>
-                <p className="text-gray-400 mb-4">
-                  {item === 1
-                    ? "지속가능경영보고서 초안을 업로드하면 GRI Index 를 생성하는 AI 도구입니다."
-                    : item === 2
-                    ? "지속가능경영보고서 초안을 업로드하면 ESRS Index 를 생성하는 AI 도구입니다."
-                    : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."}
->>>>>>> d36856b75c5408ca0fa3995820e2cbe1e5851988
                 </p>
                 <Button
                   variant="outline"
