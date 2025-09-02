@@ -12,7 +12,7 @@ const Index = () => {
       title: "AI시대 ESG경영: 인공지능(AI)을 활용한 지속가능성 전략 7가지",
       summary:
         "AI 기술이 불러온 산업 혁명은 기업 경영의 패러다임을 근본적으로 바꾸고 있다. 특히, 기업의 지속가능성을 평가하는 핵심 지표인 ESG(환경·사회·지배구조)경영에 AI를 접목하는 것은 더 이상 선택이 아닌 필수적인 생존 전략이 되고있다.",
-      image: "../../public/images/article_image1.png",
+      image: "/images/article_image1.png",
       url: "https://koreabizreview.com/detail.php?number=6479&thread=23r02",
     },
     {
@@ -20,7 +20,7 @@ const Index = () => {
       title: "[기고] AI, ESG와 함께 혁신의 두 축 이뤄야",
       summary:
         "오늘날 인공지능(AI)은 더 이상 일부 IT 기업이나 연구소만의 영역이 아니다. 제조, 금융, 물류, 마케팅, 인사, 재무 등 기업과 공공조직의 거의 모든 부문에서 이미 AI가 변화를 이끌고 있다. AI는 단순히 업무를 자동화하는 도구를 넘어 시장 예측, 고객 분석, 의사결정 지원, 신제품 개발까지 기업 경쟁력의 핵심 요소로 자리 잡았다.",
-      image: "../../public/images/article_image2.jpg",
+      image: "/images/article_image2.jpg",
       url: "https://www.newsworks.co.kr/news/articleView.html?idxno=808608",
     },
     {
@@ -28,7 +28,7 @@ const Index = () => {
       title: "SKT, '대한민국 사회적가치 페스타'서 AI기반 ESG활동 소개",
       summary:
         "SK텔레콤은 오는 25일부터 코엑스에서 개최되는 '제 2회 대한민국 사회적가치 페스타'에 참가해 환경·사회·지배구조(ESG) 비전 'DO THE GOOD AI'를 실천하는 전시와 다양한 프로그램을 선보인다고 24일 밝혔다.",
-      image: "../../public/images/article_image3.jpg",
+      image: "/images/article_image3.jpg",
       url: "https://www.etnews.com/20250824000039",
     },
     {
@@ -36,7 +36,7 @@ const Index = () => {
       title: "AI, 'ESG' 문제해결사로 떴다",
       summary:
         "인공지능(AI) 기술이 지속가능성(ESG) 경영의 핵심 동력으로 빠르게 부상하고 있습니다. 방대하고 복잡한 ESG 정보를 효율적으로 분석하고 관리하는 데 AI의 역할이 커지면서, 글로벌 기업들은 AI를 활용한 다양한 지속가능성 실천 사례를 선보이고 있습니다.",
-      image: "../../public/images/article_image4.jpg",
+      image: "/images/article_image4.jpg",
       url: "https://www.netzeronews.kr/news/articleView.html?idxno=2877",
     },
     {
@@ -44,7 +44,7 @@ const Index = () => {
       title: "유엔글로벌콤팩트 한국협회 'ESG에 AI·디지털 접목, 실행력 높여야'",
       summary:
         "유엔글로벌콤팩트(UNGC) 한국협회가 19일 서울 더 플라자 호텔에서 'ESG 거버넌스 리더십 조찬간담회'를 개최했다. 이번 간담회는 국내 기업이 글로벌 변화에 선제적으로 대응하고, ESG를 이사회와 경영 전략에 내재화하는 방안을 모색하기 위해 마련됐다.",
-      image: "../../public/images/article_image5.jpg",
+      image: "/images/article_image5.jpg",
       url: "https://magazine.hankyung.com/business/article/202508198117b",
     },
   ];
