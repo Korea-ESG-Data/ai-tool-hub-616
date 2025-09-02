@@ -39,7 +39,8 @@ const Index = () => {
             <span>Toolbox</span>
           </h1>
           <p className="text-xl mb-8">ESG 분야 AI 혁신 도구, 리뷰, 그리고 트렌드</p>
-          <p className="text-xl mb-8">proudly created by 한국ESG데이터(주)</p>
+          <p className="text-xl mb-1">100% compatible with ESG데이터플랫폼 & BHR Solution</p>
+          <p className="text-xl mb-8"> built by 한국ESG데이터(주)</p>
           <Button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
             도구 탐색하기
           </Button>
@@ -51,24 +52,28 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">추천 AI 도구</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
+            {[1, 2, 4, 3].map((item) => (
               <div key={item} className="bg-gray-800 rounded-lg p-6">
                 <Wrench className="text-green-400 mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-2">
                   {item === 1 
-                    ? "GRI Index 생성기" 
+                    ? "GRI content index 생성기" 
                     : item === 2 
-                      ? "ESRS Index 생성기" 
+                      ? "컨트로버시 (Controversy) 뉴스 큐레이터" 
                       : item === 3 
                         ? "CDP 대응 입력 내용 초안 생성기" 
-                        : `AI 도구 ${item}`}
+                        : item === 4 
+                          ? "ESG 데이터 비교 검색기"
+                          : `AI 도구 ${item}`}
                 </h3>
                 <p className="text-gray-400 mb-4">
                   {item === 1 
                     ? "지속가능경영보고서 초안을 업로드하면 GRI Index 를 생성하는 AI 도구입니다." 
                     : item === 2 
-                      ? "지속가능경영보고서 초안을 업로드하면 ESRS Index 를 생성하는 AI 도구입니다."
-                      : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."
+                      ? "주요 매체의 컨트로버시 관련 뉴스를 수집·분류·요약해 제공하는 AI 큐레이터입니다."
+                      : item === 4 
+                        ? "지속가능경영보고서에 공시된 각 기관/기업의 ESG 데이터를 지표별로 비교·검색하는 AI 도구입니다."
+                        : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."
                   }
                 </p>
                 <Button variant="outline" className="text-green-400 border-green-400 hover:bg-green-400 hover:text-white">
