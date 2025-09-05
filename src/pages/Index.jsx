@@ -160,7 +160,7 @@ const Index = () => {
 
       <section className="py-16 bg-gray-800">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">전문가 리뷰</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">ESG + AI 블로그</h2>
           <div className="flex space-x-8 overflow-x-auto pb-4">
             {[1, 2, 3].map((item) => (
               <div
@@ -189,7 +189,7 @@ const Index = () => {
 
       <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">지금 트렌드</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">AI 트렌드</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {displayedArticles.map((article) => (
               <div
