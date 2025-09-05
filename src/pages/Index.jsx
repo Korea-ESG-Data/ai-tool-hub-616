@@ -118,7 +118,7 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">추천 AI 도구</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 4, 5, 3].map((item) => (
+            {[1, 2, 4, 3, 5].map((item) => (
               <div key={item} className="bg-gray-800 rounded-lg p-6">
                 <Wrench className="text-green-400 mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-2">
@@ -131,7 +131,7 @@ const Index = () => {
                         : item === 4 
                           ? "ESG 데이터 비교 검색기"
                           : item === 5 
-                            ? "지속가능경영보고서 검증 의견서 생성기"
+                            ? "New AI Tool"
                           : `AI 도구 ${item}`}
                 </h3>
                 <p className="text-gray-400 mb-4">
@@ -142,7 +142,7 @@ const Index = () => {
                       : item === 4 
                         ? "지속가능경영보고서에 공시된 각 기관/기업의 ESG 데이터를 지표별로 비교·검색하는 AI 도구입니다."
                       : item === 5 
-                        ? "AccountAbility 사의 AA1000AS v2 검증 표준에 근거해서 검증 의견서를 생성하는 AI 도구 입니다."
+                        ? "새로운 AI 툴 아이디어 제안하기"
                         : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."
                   }
                 </p>
@@ -251,7 +251,6 @@ const Index = () => {
             <h3 className="text-xl font-bold mb-4">빠른 링크</h3>
             <ul className="space-y-2">
               {[
-                "툴 아이디어 제안하기",
                 "개인정보처리방침",
                 "서비스 약관",
                 "지원",
