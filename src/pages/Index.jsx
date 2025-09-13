@@ -61,7 +61,7 @@ const Index = () => {
             <img
               src="/logo.png"
               alt="ESG 로고"
-              className="h-6 w-auto mx-2 inline-block align-middle"
+              className="h-[42px] w-auto mx-0 inline-block align-middle [filter:brightness(0)_saturate(100%)_invert(64%)_sepia(49%)_saturate(535%)_hue-rotate(93deg)_brightness(93%)_contrast(90%)]"
             />
             <span>Toolbox</span>
           </div>
@@ -94,28 +94,37 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 via-green-900 to-blue-900">
-        <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-4 flex items-center justify-center">
-            <span>ESG</span>
-            <img
-              src="/logo.png"
-              alt="ESG 로고"
-              className="h-10 w-auto mx-3 inline-block align-middle"
-            />
-            <span>Toolbox</span>
-          </h1>
-          <p className="text-xl mt-8 mb-4">AI 전문가와 ESG 도메인 전문가들이 함께 만든</p>
-          <p className="text-xl mt-4 mb-8">ESG 분야 특화 AI Tool 모음</p>
-          <div className="flex  items-center justify-center gap-4">
-            <Button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
-              AI 전문가로 참여하기
-            </Button>
-            
-            <Button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
-              ESG 도메인 전문가로 참여하기
-            </Button>
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-12">
+            <div className="text-center md:text-left">
+              <h1 className="text-5xl font-bold mb-4 flex items-center justify-center md:justify-start">
+                <span>ESG</span>
+                <img
+                  src="/logo.png"
+                  alt="ESG 로고"
+                  className="h-[62px] w-auto mx-0 inline-block align-middle"
+                />
+                <span>Toolbox</span>
+              </h1>
+              <p className="text-xl mt-8 mb-4">AI 전문가와 ESG 도메인 전문가들이 함께 만든</p>
+              <p className="text-xl mt-4 mb-8">ESG 분야 특화 AI Tool 모음</p>
+              <div className="flex  items-center justify-center md:justify-start gap-4">
+                <Button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
+                  Under Development
+                </Button>
+              </div>
+            </div>
+            <div className="mt-10 md:mt-0 flex justify-center md:justify-end">
+              <div className="w-full max-w-md h-48 md:h-64 bg-gray-800/50 rounded-xl border border-gray-700 flex items-center justify-center">
+                <span className="text-gray-400">두 번 째 컨테이너</span>
+              </div>
+            </div>
+            <div className="mt-10 md:mt-0 flex justify-center md:justify-end">
+              <div className="w-full max-w-md h-48 md:h-64 bg-gray-800/50 rounded-xl border border-gray-700 flex items-center justify-center">
+                <span className="text-gray-400">세 번째 컨테이너</span>
+              </div>
+            </div>
           </div>
-          
         </div>
       </section>
 
