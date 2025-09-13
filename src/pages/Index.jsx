@@ -110,18 +110,18 @@ const Index = () => {
               <p className="text-xl mt-4 mb-8">ESG 분야 특화 AI Tool 모음</p>
               <div className="flex  items-center justify-center md:justify-start gap-4">
                 <Button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
-                  Under Development
+                  ESG + AI 상품 보러가기
                 </Button>
               </div>
             </div>
             <div className="mt-10 md:mt-0 flex justify-center md:justify-end">
               <div className="w-full max-w-md h-48 md:h-64 bg-gray-800/50 rounded-xl border border-gray-700 flex items-center justify-center">
-                <span className="text-gray-400">두 번 째 컨테이너</span>
+                <span className="text-gray-400">ESG + AI 교육 서비스</span>
               </div>
             </div>
             <div className="mt-10 md:mt-0 flex justify-center md:justify-end">
               <div className="w-full max-w-md h-48 md:h-64 bg-gray-800/50 rounded-xl border border-gray-700 flex items-center justify-center">
-                <span className="text-gray-400">세 번째 컨테이너</span>
+                <span className="text-gray-400">ESG + AI 컨설팅 서비스</span>
               </div>
             </div>
           </div>
