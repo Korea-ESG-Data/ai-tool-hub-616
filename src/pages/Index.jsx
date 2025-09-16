@@ -133,7 +133,7 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">AI Tool 리스트</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[2, 1, 4, 3].map((item) => (
+            {[2, 6, 1, 4, 3].map((item) => (
               <div key={item} className="bg-gray-800 rounded-lg p-6">
                 <Wrench className="text-green-400 mb-4" size={48} />
                 <h3 className="text-xl font-bold mb-2">
@@ -141,6 +141,8 @@ const Index = () => {
                     ? "GRI content index 생성 AI" 
                     : item === 2 
                       ? "ESG 이슈 리서치 분석 AI" 
+                      : item === 6 
+                        ? "ESG 컨트로버셜 뉴스 기반 중대성평가 AI" 
                       : item === 3 
                         ? "CDP 대응 입력 내용 초안 생성 AI" 
                         : item === 4 
@@ -152,6 +154,8 @@ const Index = () => {
                     ? "지속가능경영보고서 초안을 업로드하면 GRI Index 를 생성하는 AI 도구입니다." 
                     : item === 2 
                       ? "주요 매체의 ESG 컨트러버셜 (Controversial) 뉴스를 수집·분류·요약해 제공하는 AI 큐레이터입니다."
+                      : item === 6 
+                        ? "중대성평가 가이드와 중대성평가 예시를 입력하면, 컨트로버셜 뉴스 기반으로 중대성 평가를 수행하는 AI 입니다."
                       : item === 4 
                         ? "지속가능경영보고서에 공시된 각 기관/기업의 ESG 데이터를 지표별로 비교·검색하는 AI 도구입니다."
                         : "AI 도구의 기능과 역량에 대한 간략한 설명입니다."
